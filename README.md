@@ -3,6 +3,20 @@ with the cordova-plugin-local-notifications plugin installed. On deviceready,
 it fires a single notification, with vibrate and sound set to false, and
 priority set to -2. 
 
+```
+cordova.plugins.notification.local.schedule({
+    id: 0,
+    title: 'Testing notification',
+    text: 'Vibrate set to false, sound set to false, priority set to min',
+    vibrate: false,
+    sound: false,
+    priority: -2
+});
+
+```
+
+The relevant code is in:
+https://github.com/eric-zeng/no-vibrate/blob/master/www/js/index.js
 
 
 How to reproduce:
